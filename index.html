@@ -12,15 +12,11 @@
         <link href="../assets/css/material-kit.css?v=2.0.6" rel="stylesheet"/>
     </head>
     <body class="profile-page sidebar-collapse">
-        <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand" color-on-scroll="100" id="sectionsNav">
+        <nav class="navbar navbar-expand-lg bg-primary fixed-top" style="display: grid">
             <div class="container">
-                <div class="navbar-translate">
-                    <a class="navbar-brand">
-                        Todd Swepston |
-                        <i class="fa fa-envelope ml-2"></i>&nbsp;tswepsto@gmail.com |
-                        <i class="fa fa-phone ml-2"></i>&nbsp;(614) 330-5864
-                    </a>
-                </div>
+                <a class="navbar-brand" href="#">Todd Swepston</a>
+                <i class="fa fa-envelope ml-3" data-toggle="tooltip" data-placement="bottom" title="tswepsto@gmail.com" href="mailto:tswepsto@gmail.com"></i>
+                <i class="fa fa-phone ml-4" data-toggle="tooltip" data-placement="bottom" title="(614) 330-5864" href="tel:614-330-5864"></i>
             </div>
         </nav>
         <div class="page-header header-filter" data-parallax="true" style="background-image: url('../assets/img/columbus.jpg');"></div>
@@ -44,18 +40,24 @@
                     <div class="description text-center">
                         <p>I help businesses and individuals create and rebrand their very own websites, applications, and marketing materials to compete with the best in the industry.</p>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6 ml-auto mr-auto">
+                    <div class="row sticky-top p-3" style="background-color: white;">
+                        <div class="ml-auto mr-auto">
                             <div class="profile-tabs">
-                                <ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">
+                                <ul class="nav nav-pills nav-pills-primary justify-content-center sticky-top" role="tablist">
                                     <li class="nav-item">
-                                        <a class="nav-link active show" href="#work" role="tab" data-toggle="tab"> <i class="material-icons">palette</i> Work </a>
+                                        <a class="nav-link active" data-toggle="tab" href="#work" role="tablist" aria-expanded="true">
+                                            Work
+                                        </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#process" role="tab" data-toggle="tab"><i class="material-icons">list</i> Process</a>
+                                        <a class="nav-link" data-toggle="tab" href="#process" role="tablist" aria-expanded="false">
+                                            Process
+                                        </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#contacts" role="tab" data-toggle="tab"> <i class="material-icons">contact_mail</i> Contact </a>
+                                        <a class="nav-link" data-toggle="tab" href="#contacts" role="tablist" aria-expanded="false">
+                                            Contacts
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
