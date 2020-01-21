@@ -12,13 +12,35 @@
         <link href="../assets/css/material-kit.css?v=2.0.6" rel="stylesheet"/>
     </head>
     <body class="profile-page sidebar-collapse">
-        <nav class="navbar navbar-expand-lg bg-primary fixed-top" style="display: grid">
+        <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
             <div class="container">
-                <a class="navbar-brand" href="#">Todd Swepston</a>
-                <div href="mailto:tswepsto@gmail.com"><i class="fa fa-envelope ml-3 mr-1"></i>tswepsto@gmail.com</div>
-                <div href="tel:614-330-5864"><i class="fa fa-phone ml-4 mr-1"></i>(614) 330-5964</div>
+              <div class="navbar-translate">
+                <a class="navbar-brand" href="#">
+                    Todd Swepston
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="navbar-toggler-icon"></span>
+                  <span class="navbar-toggler-icon"></span>
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+              <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="tel:614-330-5864" target="_blank" data-original-title="Call me">
+                      <i class="fa fa-phone"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="mailto:tswepsto@gmail.com" data-original-title="Send me an email">
+                      <i class="fa fa-envelope"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </nav>
+          </nav>
         <div class="page-header header-filter" data-parallax="true" style="background-image: url('../assets/img/columbus.jpg');"></div>
         <div class="main main-raised">
             <div class="profile-content">
@@ -45,12 +67,12 @@
                             <div class="profile-tabs">
                                 <ul class="nav nav-pills nav-pills-primary justify-content-center sticky-top" role="tablist">
                                     <li class="nav-item">
-                                        <a class="nav-link active" data-toggle="tab" href="#work" role="tablist" aria-expanded="true">
+                                        <a class="nav-link active work" data-toggle="tab" href="#work" role="tablist" aria-expanded="true">
                                             Work
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#process" role="tablist" aria-expanded="false">
+                                        <a class="nav-link process" data-toggle="tab" href="#process" role="tablist" aria-expanded="false">
                                             Process
                                         </a>
                                     </li>
@@ -200,6 +222,10 @@
                                                     <p>Columbus, OH 43212, USA</p>
                                                 </li>
                                                 <li>
+                                                    <i class="large material-icons">phone</i>
+                                                    <a href="tel:614-330-5864"><p>tswepsto@gmail.com</p></a>
+                                                </li>
+                                                <li>
                                                     <i class="large material-icons">email</i>
                                                     <a href="mailto:tswepsto@gmail.com"><p>tswepsto@gmail.com</p></a>
                                                 </li>
@@ -237,5 +263,12 @@
         <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> -->
         <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
         <script src="../assets/js/material-kit.js?v=2.0.6" type="text/javascript"></script>
+        <script>
+            $(".work, .process, .contacts",).click(function() {
+                $('html,body').animate({
+                    scrollTop: $(".p-3").offset().top},
+                    'slow');
+            });
+        </script>
     </body>
 </html>
