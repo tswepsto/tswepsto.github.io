@@ -29,12 +29,12 @@
                 <ul class="navbar-nav ml-auto">
                   <li class="nav-item">
                     <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="tel:614-330-5864" target="_blank" data-original-title="Call me">
-                      <i class="fa fa-phone"></i>
+                      <i class="fa fa-phone mr-2"></i>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="mailto:tswepsto@gmail.com" data-original-title="Send me an email">
-                      <i class="fa fa-envelope"></i>
+                      <i class="fa fa-envelope mr-2"></i>
                     </a>
                   </li>
                 </ul>
@@ -54,18 +54,20 @@
                                 <div class="name">
                                     <h3 class="title">Todd Swepston</h3>
                                     <h6>Web Development & Design</h6>
+                                    <p>(614) 330-5864</p>
+                                    <p>tswepsto@gmail.com</p>
                                     <a href="https://www.linkedin.com/in/todd-swepston-435b11a/" class="btn btn-just-icon btn-link btn-linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="description text-center">
+                    <div class="description text-center text-dark">
                         <p>I help businesses and individuals create and rebrand their websites, applications, and marketing materials to compete with the best in the industry.</p>
                     </div>
-                    <div class="row sticky-top p-3" style="background-color: white;">
+                    <div class="row p-3">
                         <div class="ml-auto mr-auto">
                             <div class="profile-tabs">
-                                <ul class="nav nav-pills nav-pills-primary justify-content-center sticky-top" role="tablist">
+                                <ul class="nav nav-pills nav-pills-primary justify-content-center" role="tablist">
                                     <li class="nav-item">
                                         <a class="nav-link active work" data-toggle="tab" href="#work" role="tablist" aria-expanded="true">
                                             Work
@@ -77,7 +79,7 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" data-toggle="tab" href="#contacts" role="tablist" aria-expanded="false">
+                                        <a class="nav-link contacts" data-toggle="tab" href="#contacts" role="tablist" aria-expanded="false">
                                             Contact
                                         </a>
                                     </li>
@@ -263,12 +265,5 @@
         <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> -->
         <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
         <script src="../assets/js/material-kit.js?v=2.0.6" type="text/javascript"></script>
-        <script>
-            $(".work, .process, .contacts",).click(function() {
-                $('html,body').animate({
-                    scrollTop: $(".p-3").offset().top},
-                    'slow');
-            });
-        </script>
     </body>
 </html>
